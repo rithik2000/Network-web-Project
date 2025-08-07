@@ -1,31 +1,31 @@
 <settings>
 <servers>
   <server>
-    <id>nextork-project-rithik-devops-cicd</id>
+    <id>nextwork-maven-central-store</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
 </servers>
 <profiles>
   <profile>
-    <id>nextork-project-rithik-devops-cicd</id>
+    <id>nextwork-maven-central-store</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>nextork-project-rithik-devops-cicd</id>
-        <url>https://nextork-project-905943725839.d.codeartifact.us-east-2.amazonaws.com/maven/rithik-devops-cicd/</url>
+        <id>nextwork-maven-central-store</id>
+        <url>https://nextwork-905943725839.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
       </repository>
     </repositories>
   </profile>
 </profiles>
 <mirrors>
   <mirror>
-    <id>nextork-project-rithik-devops-cicd</id>
-    <name>nextork-project-rithik-devops-cicd</name>
-    <url>https://nextork-project-905943725839.d.codeartifact.us-east-2.amazonaws.com/maven/rithik-devops-cicd/</url>
+    <id>nextwork-maven-central-store</id>
+    <name>nextwork-maven-central-store</name>
+    <url>https://nextwork-905943725839.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
-</settings> 
+</settings>
